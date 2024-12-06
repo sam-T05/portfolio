@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+body, h1, h2, p, ul, li, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 span {
+    color: #FFC107;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFC107;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#about {
+    background: #f4f4f4;
+}
+
+#projects {
+    background: #eaeaea;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fff;
+    max-width: 300px;
+    text-align: left;
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+#contact button {
+    padding: 0.7rem 2rem;
+    border: none;
+    background: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+    </style>
+    <script>
+        // Basic form validation
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Thank you for reaching out! I'll get back to you soon.");
+});
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hello, I'm <span>Samuel</span></h1>
+            <p>A passionate Programmer</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a profesional programmer and hacker equiped with variuos languages knowledge.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Creating a website using html css and js</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Designing a python program which is able to trace phone number location.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Sam Tyson" required>
+            <input type="email" placeholder="mutie9558@gmail.com" required>
+            <textarea placeholder="Contact Me +254790920075" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Samuel. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
